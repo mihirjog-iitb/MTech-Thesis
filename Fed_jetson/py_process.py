@@ -482,7 +482,7 @@ def inference_thread():
 
         #Organizing the dataset
         data_dir = r'CustomApple'
-        data_dir = r'tih_onion'
+        data_dir = r'tih_onion' #MJ: select the dataset corresponding to the model.
         train_dir = data_dir + '/train'
         valid_dir = data_dir + '/val'
         nThreads = 1
