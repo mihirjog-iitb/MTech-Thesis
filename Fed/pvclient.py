@@ -335,7 +335,7 @@ print("\n")
 # This line is necessary for Windows
 
 
-#Organizing the dataset
+#MJ: Third argument is for choosing the dataset plant. Maake sure you have them in your directory.
 plant=sys.argv[3]
 
 if(plant=="Apple"):
