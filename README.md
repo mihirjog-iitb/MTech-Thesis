@@ -8,3 +8,4 @@ Jetson_client_app: This is the client side app for jetson nano. It has a client 
 
 Fed_jetson: This is a subset of client app. It is used for erforming federated learning experiment only, with jetson nano.
 
+ALL THE DIRECTORIES HAVE THEIR CORRESPONDING README files.
