@@ -624,6 +624,7 @@ class_names = image_datasets['train'].classes
 dataset_size = len(image_datasets['train'])
 dataset_indices = list(range(dataset_size))
 
+#MJ: This logic is to shuffle and create data subset of 0.5 length of total data. The resultant data loader is trainloader_subset_1 Note that the 0.5 fraction is because there were 2 clients. if there are more, you might want to change this fraction.
 np.random.shuffle(dataset_indices)
 
 
