@@ -54,11 +54,11 @@ for key, value in model.state_dict().items():
 
 x.to(device)
 # Define strategy
-strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average)
+strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average) #MJ: replace with the strategy of your choice
 # strategy = fl.server.strategy.FedMedian(evaluate_metrics_aggregation_fn=weighted_average)#,initial_parameters=fl.common.ndarrays_to_parameters(get_parameters(model)))
 # Start Flower server
 fl.server.start_server(
     server_address="localhost:8080",
-    config=fl.server.ServerConfig(num_rounds=5),
+    config=fl.server.ServerConfig(num_rounds=5),        #MJ: change the number of rounds here
     strategy=strategy,
 )
