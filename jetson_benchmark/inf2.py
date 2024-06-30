@@ -4,8 +4,8 @@ import time
 import torch
 import cv2
 PRECISION = np.float32
-modelname='mobilenet'
-BATCH_SIZE=16
+modelname='mobilenet'	#MJ:change as per trt file of the model that you want to use
+BATCH_SIZE=16		# MJ:change as per the batch size
 from onnx_helper import ONNXClassifierWrapper
 N_CLASSES = 1000 # Our ResNet-50 is trained on a 1000 class ImageNet task
 
